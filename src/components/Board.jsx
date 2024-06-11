@@ -5,9 +5,21 @@ import { TETRIS_SHAPES } from "./TETRIS_SHAPES.js";
 
 const shapes = ["T", "I", "J", "L", "O", "S", "Z"];
 let c = 0;
+const storedBoard = [
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0],
+];
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const Board = () => {
-  const storedBoard = JSON.parse(localStorage.getItem("board"));
   const [isStarted, setIsStarted] = useState(false);
   const [isPlaying, setIsPlaying] = useState(true);
   const [board, setBoard] = useState(storedBoard);
