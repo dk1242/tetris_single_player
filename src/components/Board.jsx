@@ -219,7 +219,7 @@ const Board = () => {
         <div>
           <div>
             <button
-              style={{ borderRadius: "50%", fontSize: "1rem" }}
+              style={{ borderRadius: "50%"}}
               onClick={() => rotatePiece()}
             >
               {" "}
@@ -230,7 +230,7 @@ const Board = () => {
             style={{
               display: "flex",
               justifyContent: "center",
-              gap: "50px",
+              gap: "10rem",
             }}
           >
             <button
