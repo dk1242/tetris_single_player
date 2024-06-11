@@ -1,7 +1,7 @@
 {
   "name": "tetris",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://tetris-single-player.vercel.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
